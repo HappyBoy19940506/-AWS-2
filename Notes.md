@@ -65,8 +65,8 @@
              10 ELB
              -- handling all the INC Traffic from the Internet, and help distributed into instances into different AZs
              --- health check all the instances
-             ---  put it in the public subnet, ( NAT GATEWAY MUST BE PUT IN THE PUBLIC SUBNET)
-             --- SHOULD BE ACROSS AZs aka choose two subnets.
+             ---  can put it in the public subnet or private subnet, ( NAT GATEWAY MUST BE PUT IN THE PUBLIC SUBNET)
+             --- SHOULD BE ACROSS AZs aka choose more than one subnets. like in the middle of AZs
              
              11 ELB VS NAT
                          INC TRAFFIC DISTRIBUTION -ELB

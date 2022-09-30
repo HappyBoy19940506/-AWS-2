@@ -45,6 +45,13 @@
                   3. Go to the private Route tabe--
                      Connect to a NAT Gateway
                      Routes : 0.0.0.0/0 -- NAT GATEWAY
+                     
+             7.  NAT GATEWAY VS INTERNET GATEWAY
+            Internet Gateway (IGW) allows instances with public IPs to access the internet.
+             NAT Gateway (NGW) allows instances with no public IPs to access the internet.
+             E.g. your DB level stuff can not have a public IP to connect to the Internet directly, so there should be a proxy things like NAT GATEWAY.
+             
+             
                         
                         
                         

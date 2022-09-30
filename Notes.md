@@ -10,13 +10,16 @@
                         -- Tenancy - dedicated( can only launch dedicated instances or dedicated host instances)
                                     if choose default，  u can launch all three types of instances
                                     
+                        -- Choose A VPC  --DNS resolutions true
+                                         --DNS hostname true, instances in this VPC will not only get a IP ,but alos a HOSTNAME.
+                                    
             3. Subnets
                         SUBNETS are based on the availability zone. 
                         EACH SUBNET in One AZ
                         ONE VPC -- ONE region - TWO OR MORE AZ -  MORE Subnets
                         Many Subnets can be in one availability zone,
                         
-                        Public subnets in a specific AZ   
+                        Public subnets in a specific AZ   -- AUTO ASSIGN IPS - so each time you launch instances, ips will be auto assigned.
                         Private Subnets in specific AZ 
                         
              4. Route Table
@@ -50,6 +53,11 @@
             Internet Gateway (IGW) allows instances with public IPs to access the internet.
              NAT Gateway (NGW) allows instances with no public IPs to access the internet.
              E.g. your DB level stuff can not have a public IP to connect to the Internet directly, so there should be a proxy things like NAT GATEWAY.
+             
+             8. NETWORK NACL RULES.
+               #NUMBERS -- refers to the rank , it will only respond to the highest rank rules.
+               
+              ONE VPC === ONE NACL RULES
              
              
                         

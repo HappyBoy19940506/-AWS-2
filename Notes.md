@@ -62,6 +62,17 @@
              9. Security Group
              --- INSTANCE LEVEL
              
+             10 ELB
+             -- handling all the INC Traffic from the Internet, and help distributed into instances into different AZs
+             --- health check all the instances
+             ---  put it in the public subnet, ( NAT GATEWAY MUST BE PUT IN THE PUBLIC SUBNET)
+             --- SHOULD BE ACROSS AZs aka choose two subnets.
+             
+             11 ELB VS NAT
+                         INC TRAFFIC DISTRIBUTION -ELB
+                         NAT OUTGOING TRAFFIC FROM INSTANCE TO INTERNET -NAT
+             
+             
                         
                         
                         
